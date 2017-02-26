@@ -12,7 +12,7 @@ A banking web app targeted at young adults, intended to introduce and teach onli
 ## USAGE
   * Classroom enviroment to teach students how to online bank
   * Parents teaching their children how to online bank
-  * Individuals to learn on their own
+  * Individuals learning on their own
   
 ## BUILD/INSTALLATION INSTRUCTIONS
   * http://www.l2bank.me
