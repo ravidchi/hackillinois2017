@@ -19,7 +19,7 @@ A banking web app targeted at young adults, intended to introduce and teach onli
     * simply access the url above to use the web app
     
 ## Contributor Guide
-[LINK TO CONTRIBUTING.md]
+  * https://github.com/ravidchi/hackillinois2017/blob/master/CONTRIBUTING.md
 
 ## FUTURE FEATURES/CURRENT BUGS
   * credit card account currently does not function, unable to perform any actions on it
