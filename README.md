@@ -7,7 +7,7 @@ A banking web app targeted at young adults, intended to introduce and teach onli
   * create credit card accounts
   * deposit artificial money
   * transfer money between accounts
-  * simulate shopping bank funds
+  * simulate shopping using bank funds
 
 ## USAGE
   * Classroom enviroment to teach students how to online bank
