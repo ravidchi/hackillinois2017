@@ -23,6 +23,7 @@ A banking web app targeted at young adults, intended to introduce and teach onli
 
 ## FUTURE FEATURES/CURRENT BUGS
   * credit card account currently does not function, unable to perform any actions on it
+  * more features to come!
   
 ## OTHER SOURCES OF DOCUMENTATION
   * backend used Capital One's hackathon API 
