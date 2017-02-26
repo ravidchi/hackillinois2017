@@ -21,6 +21,13 @@ A banking web app targeted at young adults, intended to introduce and teach onli
 ## Contributor Guide
 [LINK TO CONTRIBUTING.md]
 
+## FUTURE FEATURES/CURRENT BUGS
+  * credit card account currently does not function, unable to perform any actions on it
+  
+## OTHER SOURCES OF DOCUMENTATION
+  * backend used Capital One's hackathon API 
+  * http://api.reimaginebanking.com/
+
 ## License 
    Copyright 2017 Ravid Chi
 
