@@ -15,6 +15,11 @@ A banking web app targeted at young adults, intended to introduce and teach onli
   * Individuals learning on their own
   
 ## BUILD/INSTALLATION INSTRUCTIONS
+* npm install (remember to use --no-bin-links if you're on Windows)
+* bower install
+* grunt compass
+* grunt uglify
+* grunt
   * http://www.l2bank.me
     * simply access the url above to use the web app
     
