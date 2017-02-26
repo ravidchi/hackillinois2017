@@ -1,0 +1,44 @@
+<div>
+	<div class="row">
+    	<div class="small-12 medium-6  small-centered columns">
+          <a class="small button" style="float:right" href="#/customer/{{customerID}}">Accounts</a>          
+        	<h3 class="inline">Add Account</h3>
+          <p>Savings Account: account with higher interests to be used for saving money.</p><br>
+          <p>Checking Account: account to store money that is to be spent on purchses.</p>  <br>
+          <p>Credit: account that is tied to your credit card. This account's balance increases with purchases and must be payed off monthly).</p>  
+    	</div>
+  </div>
+  <br>
+
+    <form name="userForm" data-abide novalidate>
+        <div class="row">
+            <div class="small-12 medium-6 small-centered columns">
+              <label>Type
+                <select ng-model="type" required >
+                  <option value=""></option>
+                  <option value="Savings">Savings</option>
+                  <option value="Checking">Checking</option>
+                  <option value="Credit Card">Credit Card</option>
+                </select>
+                <span class="form-error">Account type is required.</span>
+              </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 medium-6 small-centered  columns">
+              <label>Nickname
+                <input type="text" ng-model="nickname" required >
+                <span class="form-error">Nickname is required.</span>
+              </label>
+            </div>
+        </div>   
+        <div class="row">
+            <div class="small-12 medium-6 small-centered  columns">
+              <div class="text-center">
+                  <button class="button" type="submit" ng-click="addAccount()">Add</button>
+              </div>
+            </div>
+        </div>         
+    </form>  
+
+</div>

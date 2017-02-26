@@ -1,0 +1,92 @@
+<div>
+	<div class="row">
+    	<div class="small-12 columns">
+          <a class="small button" style="float:right" href="#/customer/{{customerID}}">Accounts</a>      
+        	<h3 class="inline">Account Dashboard</h3> 
+          <p>Account Number: {{accountID}}</p>
+          <p>Nickname: {{account.nickname}}</p>
+
+          <div style="float:right">
+              <div class="text-center">
+                  <a class="small button" href="#/customer/{{customerID}}/{{accountID}}/deposit">Deposit</a>
+                  <a class="small alert button" ng-click="deleteAccount(accountID)">Delete</a>
+              </div>
+          </div>
+
+          <p>Balance: ${{account.balance}}</p>
+          <p>Account Type: {{account.type}}</p>
+      </div>
+  </div>
+  <hr>
+  <br> 
+
+  <div class="row">
+      <div class="small-12 columns">
+          <h3 class="inline">Purchases:</h3> 
+      </div>
+      <hr>
+  </div>
+
+
+  <div class="row" ng-repeat="purchase in purchases">
+      <div class="small-6 columns">
+        <p>Date: {{purchase.purchase_date}}</p>
+        <p>Description: {{purchase.description}}</p>
+        <br>
+      </div>
+      <div class="small-6 columns">  
+        <p>Amount: ${{purchase.amount}}</p>
+        <p>Status: {{purchase.status}}</p>
+        <br>
+      </div>
+    <hr>
+  </div>
+  <br><br>    
+     
+
+  <div class="row">
+      <div class="small-12 columns">
+          <h3 class="inline">Desposits:</h3> 
+      </div>
+      <hr>
+  </div>
+
+
+  <div class="row" ng-repeat="deposit in deposits">
+      <div class="small-6 columns">
+        <p>Date: {{deposit.transaction_date}}</p>
+        <p>Description: {{deposit.description}}</p>
+        <br>
+      </div>
+      <div class="small-6 columns">  
+        <p>Amount: ${{deposit.amount}}</p>
+        <p>Status: {{deposit.status}}</p>
+        <br>
+      </div>
+    <hr>
+  </div>
+  <br><br>
+
+  <div class="row">
+      <div class="small-12 columns">
+          <h3 class="inline">Transfers</h3> 
+      </div>
+      <hr>
+  </div>
+
+  <div class="row" ng-repeat="transfer in transfers">
+      <div class="small-6 columns">
+        <p>Amount: ${{transfer.amount}}</p>      
+        <p>Description: {{transfer.description}}</p>   
+        <p>Status: {{transfer.status}}</p>
+        <br> 
+      </div>
+      <div class="small-6 columns">
+        <p>From: {{transfer.payer_id}}</p>
+        <p>To: {{transfer.payee_id}}</p>
+      </div>      
+    <hr>
+  </div>  
+
+
+</div>

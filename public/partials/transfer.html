@@ -1,0 +1,55 @@
+<div>
+	<div class="row">
+    	<div class="small-12 medium-6 small-centered  columns">
+          <a class="small button" style="float:right" href="#/customer/{{customerID}}">Accounts</a>           
+        	<h3 class="inline">Transfer</h3> 
+
+          <form name="userForm" data-abide novalidate>
+              <div class="row">    
+                  <div class="small-12 small-centered columns">
+                    <label>Transfer From
+                      <select type="text" ng-model="source" ng-options="source.nickname for source in accounts" required ></select>
+                      <p>Balance: {{source.balance}}</p>
+                      <br>
+                      <span class="form-error">Source account is required.</span>
+                    </label>
+                  </div>
+              </div>
+              <div class="row">    
+                  <div class="small-12 columns">
+                    <label>Transfer To
+                      <select type="text" ng-model="destination" ng-options="destination.nickname for destination in accounts" required ></select>
+                      <p>Balance: {{destination.balance}}</p>
+                      <br>
+                      <span class="form-error">Destination account is required.</span>
+                    </label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="small-12 columns">
+                    <label>Amount
+                      <input type="number" ng-model="amount" required >
+                      <span class="form-error">Amount is required.</span>
+                    </label>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="small-12 columns">
+                  <label>Description
+                    <input type="text" ng-model="description" required >
+                    <span class="form-error">Description is required.</span>
+                  </label>
+                </div> 
+              </div>
+              <div class="row">
+                  <div class="small-12 columns">
+                    <div class="text-center">
+                        <button class="button" type="submit" ng-click="transfer()">Transfer</button>
+                    </div>
+                  </div>
+              </div>  
+          </form>
+    	</div>
+  </div>
+
+</div>

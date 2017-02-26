@@ -1,0 +1,80 @@
+<div>
+	<div class="row">
+    	<div class="small-12 columns">
+          <a class="small button" style="float:right" href="#/customer/{{customerID}}">Accounts</a>          
+        	<h3 class="inline">Universal Shop!</h3> 
+          <p>This is an online simulation store. Simulate purchases and learn what occurs in your bank account!</p> 
+          <br>
+      </div>
+
+      <div class="small-6 columns">
+          <form name="userForm" data-abide novalidate>
+              <div class="row">    
+                  <div class="small-12 columns">
+                    <label>Purchase Using
+                      <select type="text" ng-model="source" ng-options="source.nickname for source in accounts" required ></select>
+                      <p>Balance: ${{source.balance}}</p>
+                      <br>
+                    </label>
+                  </div>
+              </div>
+          </form>
+
+    	</div>
+      <hr>
+  </div>
+
+  <div class="row">
+      <div class="small-3 columns">    
+          <img src="http://vignette1.wikia.nocookie.net/smosh/images/b/b2/Pink_frosted_sprinkled_donut.jpg/revision/latest?cb=20120101131536.jpg" style="width:100px;height:100px;">
+      </div>
+      <div class="small-9 columns">    
+          <a class="small button" style="float:right" ng-click="purchase('Donut', 1)">Purchase</a>
+          <h3 class="inline">Donut</h3>   
+          <p>Price: $1</p>
+      </div>
+
+  </div>  
+  <hr>
+
+  <div class="row">
+      <div class="small-3 columns">    
+          <img src="http://vignette2.wikia.nocookie.net/leagueoflegends/images/d/d6/LoL_RP_Card_10.jpg/revision/latest?cb=20160123103808.jpg" style="width:70px;height:100px;">
+      </div>
+      <div class="small-9 columns">    
+          <a class="small button" style="float:right" ng-click="purchase('Riot Points', 10)">Purchase</a>
+          <h3 class="inline">Riot Points</h3>   
+          <p>Price: $10</p>
+      </div>
+  </div>  
+  <hr>  
+
+  <div class="row">
+      <div class="small-3 columns">    
+          <img src="https://blazingboost.global.ssl.fastly.net/skin/front/images/lol-service-bronze-big.png" style="width:100px;height:70px;">
+      </div>
+      <div class="small-9 columns">    
+          <a class="small button" style="float:right" ng-click="purchase('ELO Boost: Bronze', 5)">Purchase</a>
+          <h3 class="inline">Bronze 5 to Bronze 1 ELO Boost</h3>   
+          <p>Price: $5</p>
+      </div>
+  </div>  
+  <hr>
+
+
+  <div class="row">
+      <div class="small-3 columns">    
+          <img src="http://vignette4.wikia.nocookie.net/leagueoflegends/images/3/36/ChallengerBadge.png/revision/latest?cb=20150418014914.jpg" style="width:110px;height:100px;">
+      </div>
+      <div class="small-9 columns">    
+          <a class="small button" style="float:right" ng-click="purchase('ELO Boost: Challenger', 100)">Purchase</a>
+          <h3 class="inline">Challenger ELO Boost</h3>   
+          <p>Price: $100</p>
+      </div>
+  </div>  
+  <hr>       
+
+
+ 
+
+</div>

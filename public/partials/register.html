@@ -1,0 +1,57 @@
+<div>
+	<div class="row">
+    	<div class="small-12 medium-6 small-centered columns">
+        	<h3 class="inline">Create Customer Account</h3> 
+    	</div>
+    </div>
+
+    <form name="userForm" data-abide novalidate>
+        <div class="row">
+            <div class="small-12 medium-6 small-centered columns">
+              <label>First Name
+                <input type="text" ng-model="first_name" required >
+                <span class="form-error">First name is required.</span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 small-centered columns">
+              <label>Last Name
+                <input type="text" ng-model="last_name" required >
+                <span class="form-error">Last Name is required.</span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 small-centered columns">
+              <label>Street Number
+                <input type="text" ng-model="street_number" required >
+                <span class="form-error">Street Number is required.</span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 small-centered columns">
+              <label>Street Name
+                <input type="text" ng-model="street_name" required >
+                <span class="form-error">Street Name is required.</span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 small-centered columns">
+              <label>City
+                <input type="text" ng-model="city" required >
+                <span class="form-error">City is required.</span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 small-centered columns">
+              <label>State (2 letters)
+                <input type="text" ng-model="state" required >
+                <span class="form-error">State is required.</span>
+              </label>
+            </div>
+            <div class="small-12 medium-6 small-centered columns">
+              <label>Zip (5 digits)
+                <input type="text" ng-model="zip" required >
+                <span class="form-error">Zip is required.</span>
+              </label>
+            </div>
+            <div class="text-center">
+                <button class="button" type="submit" ng-click="SendData()">Register</button>
+            </div>
+        </div>   
+    </form>
+</div>

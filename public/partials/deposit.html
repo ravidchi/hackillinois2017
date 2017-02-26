@@ -1,0 +1,38 @@
+<div>
+	<div class="row">
+    	<div class="small-12 medium-6 small-centered columns">
+        	<h3 class="inline">Deposit</h3> 
+          <p>Depositing To: {{account.nickname}}</p>
+          <br>
+
+          <form name="userForm" data-abide novalidate>
+              <div class="row">
+                  <div class="small-12 columns">
+                    <label>Amount
+                      <input type="number" ng-model="amount" required >
+                      <span class="form-error">Amount is required.</span>
+                    </label>
+                  </div>
+              </div>
+              <div class="row">    
+                  <div class="small-12 columns">
+                    <label>Description
+                      <input type="text" ng-model="description" required >
+                      <span class="form-error">Description is required.</span>
+                    </label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="small-12 columns">
+                    <div class="text-center">
+                        <button class="button" type="submit" ng-click="deposit()">Deposit</button>
+                    </div>
+                  </div>
+              </div>  
+          </form>
+
+
+    	</div>
+  </div>
+
+</div>

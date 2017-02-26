@@ -1,0 +1,29 @@
+
+
+<div class="search_box row">
+	<div class="alert columns small-12">
+		<div class="row">
+		    <div class="alert columns small-12">
+		    	<!-- add 250 to prev to handle looping -->
+				<a class="secondary button" ng-href="#/details/{{ ((currentID-0)-1+250)%250 }}"> < </a>
+
+				<a class="secondary button" style="float:right" ng-href="#/details/{{ ((currentID-0)+1)%250 }}"> > </a>
+		    </div>
+		</div>
+
+		<div class="row">
+		    <div class="alert columns small-6 large-3">
+				<img ng-src="./data/images/{{movies[currentID].imdbID}}.jpg">
+		    </div>
+		    <div class="alert columns small-6 large-9">
+				<h1>{{movies[currentID].title}}</h1>
+				<p><b>Rank:</b> {{movies[currentID].rank}}</p>
+				<p><b>Description:</b> {{movies[currentID].plot}}</p>
+				<p><b>Released:</b> {{movies[currentID].released}}</p>
+				<p><b>Runtime:</b> {{movies[currentID].runtime}}</p>
+				<p><b>Awards:</b> {{movies[currentID].awards}}</p>
+		    </div>
+		</div>
+	</div>
+</div>
+

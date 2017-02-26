@@ -1,0 +1,82 @@
+<div>
+	<div class="row">
+    	<div class="small-12 columns">
+          <div style="float:right">
+              <div class="text-center">
+                <a class="small success button" href="#/customer/{{customerID}}/shop">Shopping Simulation</a>
+                <a class="small alert button" href="#/">Exit</a>
+              </div>
+          </div>
+        	<h3 class="inline">Hello {{customer.first_name}}!</h3> 
+          <p>Welcome to your L2Bank account. Complete the achievements below to learn to successfully online bank!</p>
+          <br>
+          <br>
+      </div>
+  </div>
+
+      <div class="row">
+        <div class="small-12 medium-3 columns text-center">
+          <span style="width:120px">
+            <p>Add an account</p>
+            <img ng-show="addAccount=='false'" src="https://img.clipartfest.com/c39b41c169540b6b4370087351d2c827_super-mario-super-star-outline-mario-star-clipart_570-570.jpeg" style="width:100px;height:100px;">
+            <img ng-show="addAccount=='true'" src="http://images.all-free-download.com/images/graphicthumb/star_101449.jpg" style="width:100px;height:100px;">
+          </span>  
+        </div>
+        <div class="small-12 medium-3 columns text-center">
+          <span >
+            <p>Make a deposit</p>
+            <img ng-show="deposit=='false'" src="https://img.clipartfest.com/c39b41c169540b6b4370087351d2c827_super-mario-super-star-outline-mario-star-clipart_570-570.jpeg" style="width:100px;height:100px;">
+            <img ng-show="deposit=='true'" src="http://images.all-free-download.com/images/graphicthumb/star_101449.jpg" style="width:100px;height:100px;">
+          </span>  
+        </div>
+        <div class="small-12 medium-3 columns text-center">           
+          <span >
+            <p>Transfer money</p>
+            <img ng-show="transfer=='false'" src="https://img.clipartfest.com/c39b41c169540b6b4370087351d2c827_super-mario-super-star-outline-mario-star-clipart_570-570.jpeg" style="width:100px;height:100px;">
+            <img ng-show="transfer=='true'" src="http://images.all-free-download.com/images/graphicthumb/star_101449.jpg" style="width:100px;height:100px;">
+          </span> 
+        </div>
+        <div class="small-12 medium-3 columns text-center">          
+          <span >
+            <p>Purchase an item</p>
+            <img ng-show="shop=='false'" src="https://img.clipartfest.com/c39b41c169540b6b4370087351d2c827_super-mario-super-star-outline-mario-star-clipart_570-570.jpeg" style="width:100px;height:100px;">
+            <img ng-show="shop=='true'" src="http://images.all-free-download.com/images/graphicthumb/star_101449.jpg" style="width:100px;height:100px;">
+          </span>    
+        </div>
+      </div>
+    
+  
+  <div class="row">
+      <div class="small-12 columns">
+          <br><br>
+          <div style="float:right">
+              <div class="text-center">
+                <a class="small button" href="#/customer/{{customerID}}/transfer">Transfer Funds</a>
+                <a class="small button" href="#/customer/{{customerID}}/add">Add Account</a>
+              </div>
+          </div>
+
+          <h2 class="inline">Accounts:</h2> 
+      
+    	</div>
+      <hr>
+  </div>
+
+
+    <div class="row" ng-repeat="account in accounts">
+      <div>
+        <div class="small-12 medium-6 columns">
+          <a href="#/customer/{{customerID}}/{{account._id}}"><h5>Account Name: {{account.nickname}}</h5></a>
+          <h5>Balance: ${{account.balance}}</h5>
+        </div>
+        <div class="small-12 medium-6 columns"> 
+          <h5>Type: {{account.type}}</h5>
+          <h5>Account Number: {{account._id}}</h5>
+          <br>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+
+</div>
