@@ -22,7 +22,7 @@ A banking web app targeted at young adults, intended to introduce and teach onli
 [LINK TO CONTRIBUTING.md]
 
 ## License 
-   Copyright 2017 [Ravid Chi]
+   Copyright 2017 Ravid Chi
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
